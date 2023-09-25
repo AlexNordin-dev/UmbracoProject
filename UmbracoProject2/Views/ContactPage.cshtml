@@ -1,0 +1,14 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ContactPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div style="display: flex; flex-direction: column; padding:20px;">
+    <p>@Model.Value("adressContactH1")</p>
+    <br>
+    <p> @Model.Value("telefonContactH1")</p>
+    <br>
+    <p> @Model.Value("epostContactH1")</p> 
+</div>

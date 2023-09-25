@@ -1,0 +1,38 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body, html {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="display: flex; flex-direction: row; align-items: center;  justify-content: center; padding:20px;  background-color:gainsboro;">
+        <a href="/" style="padding: 10px; margin:10px;">Startsida</a>
+        <a href="/om-oss" style="padding:1px; margin:10px;">Om oss</a>
+        <a href="/contact" style="padding:10px; margin:10px;">Contact</a>
+    </div>
+
+    <div style=" display: flex;  flex-direction: row;  align-items: center;  justify-content: center; padding:10px; margin-top:40px; height: 100%;">
+        @RenderBody()
+
+    </div>
+</body>
+</html>

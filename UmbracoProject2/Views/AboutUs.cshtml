@@ -1,0 +1,19 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.AboutUs>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "Master.cshtml";
+}
+
+
+
+
+<div style="display: flex; flex-direction: column; padding:20px;" >
+    <h1> @Model.Value("titelAboutUsH1")</h1>
+    <br>
+    <p>  @Model.Value("adressAboutUsH1")</p>
+    <br>
+    <p> @Model.Value("telefonAboutUsH1")</p>
+    <br>
+    <p> @Model.Value("beskrivningAboutUsH1")</p>
+</div>
