@@ -5,38 +5,9 @@
     Layout = "Master.cshtml";
 }
 
-<main style="display: flex; flex-direction: column; padding:20px; font-size:50px; color: #FECC02; background-color:#006AA7;">
+@* <main style="display: flex; flex-direction: column; padding:20px; font-size:50px; color: #FECC02; background-color:#006AA7;">
     <h1>  @Model.Value("titelTextH1")</h1>
-</main>
-
-<div style="display: flex; flex-direction: column; padding:20px; ">
+</main> *@
 
 
-   
-
-    <br>
-    <br>
-    <div class="FLAG sweden"></div>
-    <style>
-
-        body {
-/*             background: #006AA7;
- */        }
-
-        .FLAG {
-            margin: 1em;
-            height: 150px;
-            width: 200px;
-            float: left;
-        }
-
-        .sweden {
-            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 25%, #FECC02 25%, #FECC02 33%, rgba(255, 255, 255, 0) 33%), -webkit-linear-gradient(bottom, #006AA7 45%, #FECC02 45%, #FECC02 55%, #006AA7 55%);
-            background: linear-gradient(to right, rgba(255, 255, 255, 0) 25%, #FECC02 25%, #FECC02 33%, rgba(255, 255, 255, 0) 33%), linear-gradient(to bottom, #006AA7 45%, #FECC02 45%, #FECC02 55%, #006AA7 55%);
-        }
-
-    </style>
-
-
-
-</div>
+@Html.GetBlockListHtml(Model.BlockArea)
